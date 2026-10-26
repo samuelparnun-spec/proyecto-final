@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Último Código</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="barra">
+  <a class="logo" href="#portada">El Último Código</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="menu">
+    <a href="#portada">Inicio</a>
+    <a href="#descubrimiento">Historia</a>
+    <a href="#personajes">Personajes</a>
+    <a href="#pistas">Pistas</a>
+    <a href="#final">Final</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. PORTADA -->
+<section id="portada" class="escena hero">
+  <div class="hero-texto">
+    <h1>El Último Código</h1>
+    <p class="sub">Una historia de ciencia ficción, misterio y aventura.</p>
+    <p>Alex encontró una carpeta que nadie debía abrir. Le quedan pocos minutos.</p>
+    <a class="boton" href="#descubrimiento">Abrir Proyecto 0</a>
+  </div>
+  <img src="images/computadora.svg" alt="Computadora antigua con una carpeta brillante en la pantalla" class="hero-img">
+</section>
+
+<!-- 2. EL DESCUBRIMIENTO -->
+<section id="descubrimiento" class="escena">
+  <h2>El descubrimiento</h2>
+  <div class="dos-col">
+    <img src="images/laboratorio.svg" alt="Laboratorio de informática vacío por la noche">
+    <div>
+      <p>Alex se queda después de clases en el laboratorio para terminar un proyecto. El edificio queda en silencio.</p>
+      <p>En una computadora antigua aparece una carpeta desconocida llamada <strong>Proyecto 0</strong>. Al abrirla, una voz digital responde.</p>
+      <p>Para saber más sobre cómo se construyen páginas como esta, visita <a href="https://developer.mozilla.org/es/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a>.</p>
+    </div>
+  </div>
+
+  <h3 id="personajes">Personajes</h3>
+  <ul class="personajes">
+    <li><img src="images/alex.svg" alt="Alex, estudiante"><strong>Alex</strong> Estudiante curioso que no sabe rendirse.</li>
+    <li><img src="images/nova.svg" alt="NOVA, inteligencia artificial"><strong>NOVA</strong> Programa misterioso que vive en el sistema.</li>
+    <li><img src="images/leo.svg" alt="Leo, amigo de Alex"><strong>Leo</strong> Amigo de Alex, experto en hardware.</li>
+    <li><img src="images/creador.svg" alt="El Creador, silueta con código"><strong>El Creador</strong> Dejó el código. Nadie sabe quién es.</li>
+  </ul>
+</section>
+
+<!-- 3. LAS PRIMERAS PISTAS -->
+<section id="pistas" class="escena">
+  <h2>Las primeras pistas</h2>
+  <p>El sistema comienza a fallar. En la pantalla aparece un mensaje: <em>"Quedan pocos minutos para completar el código."</em></p>
+  <div class="ventana">
+    <div class="titulo-ventana"><span>pista.txt</span><span class="x">×</span></div>
+    <div class="cuerpo-ventana">
+      <p>¿Quieres saber qué hay detrás del error?</p>
+      <button class="boton" id="btnPista" aria-expanded="false" aria-controls="pistaSecreta">Revelar pista secreta</button>
+      <p id="pistaSecreta" class="oculto">Pista: NOVA no es un virus. Fue creada para <strong>proteger</strong> algo. Busca los tres fragmentos del código en la siguiente escena.</p>
+    </div>
+  </div>
+  <p class="nota">Leer más sobre <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial" target="_blank" rel="noopener">inteligencia artificial</a>.</p>
+</section>
+
+<!-- 4. EL CÓDIGO PERDIDO -->
+<section id="codigo" class="escena">
+  <h2>El código perdido</h2>
+  <div class="dos-col">
+    <img src="images/codigo.svg" alt="Líneas de código con huecos faltantes">
+    <div>
+      <p>Alex debe encontrar las partes faltantes. Pulsa cada fragmento para recuperarlo.</p>
+      <div class="fragmentos">
+        <button class="boton frag" data-linea="l1">Fragmento 1</button>
+        <button class="boton frag" data-linea="l2">Fragmento 2</button>
+        <button class="boton frag" data-linea="l3">Fragmento 3</button>
+      </div>
+      <p class="estado" id="estado">Recuperados: 0 de 3</p>
+    </div>
+  </div>
+  <pre class="terminal" id="terminal" aria-live="polite"><span>function nova() {</span>
+<span id="l1" class="falta">  // fragmento 1 perdido</span>
+<span id="l2" class="falta">  // fragmento 2 perdido</span>
+<span id="l3" class="falta">  // fragmento 3 perdido</span>
+<span>}</span></pre>
+</section>
+
+<!-- 5. EL ÚLTIMO CÓDIGO -->
+<section id="final" class="escena">
+  <h2>El último código</h2>
+  <p id="bloqueado">El sistema sigue bloqueado. Completa los tres fragmentos para continuar.</p>
+  <div id="desenlace" class="oculto">
+    <p>Alex completa el código y descubre que NOVA fue creada para proteger información importante de la institución.</p>
+    <p>Aparece un último mensaje. ¿Qué hará Alex?</p>
+    <div class="fragmentos">
+      <button class="boton" id="opA">Abrir el mensaje</button>
+      <button class="boton" id="opB">Apagar la computadora</button>
+    </div>
+    <div class="ventana oculto" id="mensajeCreador">
+      <div class="titulo-ventana"><span>mensaje_del_creador.txt</span><span class="x">×</span></div>
+      <div class="cuerpo-ventana"><p id="textoCreador"></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie"><p>Proyecto de programación · HTML, CSS y JavaScript</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
