@@ -1,0 +1,29 @@
+# Proyecto Final – Diseño de Software
+
+## Descripción
+Este proyecto se desarrolla como parte del curso de Diseño de Software de décimo año. Su objetivo es aplicar los conocimientos adquiridos durante el curso mediante el desarrollo de un proyecto de software.
+
+## Objetivos
+- Aplicar los conceptos de diseño y desarrollo de software.
+- Organizar el código y los archivos del proyecto.
+- Utilizar Git y GitHub para el control de versiones.
+- Documentar el proceso de desarrollo.
+
+## Tecnologías utilizadas
+- HTML
+- CSS
+- JavaScript
+- Git
+- GitHub
+
+## Instalación y ejecución
+1. Clonar el repositorio.
+2. Abrir la carpeta del proyecto.
+3. Abrir el archivo `index.html` en el navegador, si corresponde.
+
+## Autor
+Samuel Parra Núñez
+
+## Estado del proyecto
+En desarrollo.
+
