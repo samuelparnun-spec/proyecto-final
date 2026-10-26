@@ -67,3 +67,4 @@ h3{font-size:1.4rem;color:var(--celeste);margin-top:3rem}
   nav.abierto{display:flex}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.boton{transition:none}}
+body{letter-spacing:.2px}
