@@ -57,3 +57,4 @@ const obs = new IntersectionObserver(entradas => {
   }});
 }, { rootMargin: '-40% 0px -55% 0px' });
 document.querySelectorAll('section[id]').forEach(s => obs.observe(s));
+console.log('El Último Código cargado');
