@@ -1,0 +1,15 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración del editor
+.vscode/
+.idea/
+
+# Archivos temporales y logs
+*.log
+*.tmp
+
+# Dependencias y salidas de herramientas
+node_modules/
+dist/
