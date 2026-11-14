@@ -19,3 +19,6 @@ Alex se queda en el laboratorio de informática y encuentra una carpeta desconoc
 
 ## Autor
 Samuel Parnun, Décimo Año, Diseño de Software, 2026.
+
+
+**Estado del proyecto: Terminado**
